@@ -49,11 +49,10 @@ a{display: flex;
     padding: 11px 16px;
     align-items: flex-end;
     gap: 10px;
-
+    border-top: 1px ;
+   /* Added in border, showing up higher */
   }
-.userImage {
 
-}
 
 }
 .userImage {
