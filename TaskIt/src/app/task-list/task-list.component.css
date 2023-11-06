@@ -21,4 +21,5 @@ h1{font-family: Inter;
     font-weight: 600;
     line-height: normal;
     display: flex;
+    position: absolute top;
   }
