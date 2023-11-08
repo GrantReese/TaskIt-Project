@@ -10,8 +10,18 @@
     <div class="d-flex flex-nowrap">
       <div class="order-1 p-2">Filters:</div>
       <div class="order-2 p-2">Status</div>
-      <div class="order-3 p-2">Date</div>
-      <div class="order-4 p-2">Priority</div>
+      <!-- Date now moved in front of filters, property not working with flexbox? -->
+      <select id="order-3 p-2 date " name="date" >
+        <option value="" selected disabled hidden>Date</option>
+        </select>
+      <!-- <div class="order-3 p-2">Date</div> -->
+      <!-- <div class="order-4 p-2">Priority</div> -->
+      <select class="order-4 p-2 priorityFilter">
+        <option value="" selected disabled hidden>Priority</option>
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+        </select>
       <div class="order-5 p-2">Add New Task</div>
       <!-- Needs a button on the right  -->
 
