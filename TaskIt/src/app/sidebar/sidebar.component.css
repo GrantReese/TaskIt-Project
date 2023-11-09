@@ -18,7 +18,7 @@ h3 {
   margin-top: 50px;
 
 }
-a{display: flex;
+#f2{display: flex;
   width: 200px;
   height: 48px;
   padding: 15px 0 px;
@@ -29,6 +29,18 @@ a{display: flex;
   background: #f8f8f8;
   margin: 10px;
 }
+#f1{display: flex;
+  width: 200px;
+  height: 48px;
+  padding: 15px 0 px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #48c15b;
+  margin: 10px;
+}
+
 
 .sidebar{
   display: flex;

@@ -23,3 +23,7 @@ h1{font-family: Inter;
     display: flex;
     position: absolute top;
   }
+  .tasklist-row {
+    display: flex;
+    justify-content: space-around;
+  }
