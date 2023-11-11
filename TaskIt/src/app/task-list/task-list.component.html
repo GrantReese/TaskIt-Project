@@ -7,27 +7,28 @@
   </div>
   <div>
 
-    <div class="d-flex flex-nowrap">
-      <div class="order-1 p-2">Filters:</div>
-      <div class="order-2 p-2">Status</div>
-      <!-- Date now moved in front of filters, property not working with flexbox? -->
-      <select id=" date order-3 p-2 date" name="date" >
+    <div class="top-line d-flex flex-nowrap filters">
+      <div class="order-1 p-2"><b>Filters:</b></div>
+      <select class="order-2 p-2 status-dropdown">Status
+      <option value="" selected disabled hidden>Status</option>
+      <option value="Complete">Complete</option>
+      <option value="Incomplete">Incomplete</option></select>
+
+      <select class=" date order-3 p-2 date-dropdown" name="date" >
         <option value="" selected disabled hidden>Date</option>
         </select>
-      <!-- <div class="order-3 p-2">Date</div> -->
-      <!-- <div class="order-4 p-2">Priority</div> -->
-      <select class="order-4 p-2 priorityFilter">
+
+      <select class="order-4 p-2 priority-dropdown">
         <option value="" selected disabled hidden>Priority</option>
         <option value="low">Low</option>
         <option value="medium">Medium</option>
         <option value="high">High</option>
         </select>
-      <div class="order-5 p-2">Add New Task</div>
-      <!-- Needs a button on the right  -->
+        <button class="order-5 p-2 new-task" >Add New Task</button>
 
     </div>
     <div>
-      <div class="tasklist-headings, d-flex flex-nowrap">
+      <div class="tasklist-headings d-flex flex-nowrap">
         <div class="order-1 p-2">Title</div>
         <div class="order-2 p-2">Due Date</div>
         <div class="order-3 p-2">Priority</div>
