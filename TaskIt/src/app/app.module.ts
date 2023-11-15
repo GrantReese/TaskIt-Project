@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { TaskListComponent } from './task-list/task-list.component';
 import { KanbanBoardComponent } from './kanban-board/kanban-board.component';
+import { TaskModalComponent } from './shared/task-modal/task-modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     TaskListComponent,
-    KanbanBoardComponent
+    KanbanBoardComponent,
+    TaskModalComponent
   ],
   imports: [
     BrowserModule
