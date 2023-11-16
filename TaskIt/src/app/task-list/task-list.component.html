@@ -12,6 +12,7 @@
       <select class="order-2 p-2 status-dropdown">Status
       <option value="" selected disabled hidden>Status</option>
       <option value="Complete">Complete</option>
+      <option value="inProgress">In Progress</option>
       <option value="Incomplete">Incomplete</option></select>
 
       <select class=" date order-3 p-2 date-dropdown" name="date" >
@@ -24,7 +25,7 @@
         <option value="medium">Medium</option>
         <option value="high">High</option>
         </select>
-        <button class="order-5 p-2 new-task" >Add New Task</button>
+        <button class="order-5 p-2 new-task" data-bs-toggle="addModal" data-bs-target="addModal">Add New Task</button>
 
     </div>
     <div>
