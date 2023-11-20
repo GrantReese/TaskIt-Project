@@ -1,16 +1,16 @@
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
+import { BehaviorSubject, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SharedService {
-  private buttonClickSource = new Subject<void>();
+  private buttonClickSource = new BehaviorSubject<boolean>(false);
 
   buttonClick$=this.buttonClickSource.asObservable();
 
-  triggerButtonClick(){
-    this.buttonClickSource.next();
+  triggerButtonClick(value: boolean){
+    this.buttonClickSource.next(value);
   }
 
   constructor() { }

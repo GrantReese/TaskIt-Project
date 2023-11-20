@@ -9,6 +9,6 @@ import { SharedService } from '../shared/shared.service';
 export class TaskListComponent {
   constructor(private sharedService: SharedService) {}
 onButtonClick(){
-  this.sharedService.triggerButtonClick();
+  this.sharedService.triggerButtonClick(true);
 }
 }
