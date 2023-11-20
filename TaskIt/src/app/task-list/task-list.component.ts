@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SharedService } from '../shared/shared.service';
 
 @Component({
   selector: 'app-task-list',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./task-list.component.css']
 })
 export class TaskListComponent {
-
+  constructor(private sharedService: SharedService) {}
+onButtonClick(){
+  this.sharedService.triggerButtonClick();
+}
 }
