@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 import { SharedService } from '../shared.service';
 
 @Component({
@@ -7,14 +7,11 @@ import { SharedService } from '../shared.service';
   styleUrls: ['./task-modal.component.css']
 })
 export class TaskModalComponent implements OnInit {
-  showTaskModalComponent = false;
+  constructor(private elementRef: ElementRef){
 
-  constructor(private sharedService: SharedService) {}
-
-  ngOnInit(): void {
-      this.sharedService.buttonClick$.subscribe(()=> {
-        this.showTaskModalComponent = true;
-      })
   }
+  ngOnInit(): void {
+    const myModal =this.elementRef.nativeElement.querySelector
 
+  }
 }
